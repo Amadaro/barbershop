@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп «Бородинский»</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">
+            <img src="img/logo.svg" width="368" height="153"
+            alt="Логотип барбершопа «Бородинский»">
+        </a>
+        <ul>
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <a href="blank.html">Вход</a>
+    </nav>
+</header>
+<main>
+    <h1>Средства для ухода</h1>
+
+    <ul>
+        <li>
+            <a href="index.html">Главная</a>
+        </li>
+        <li>
+            <a href="catalog.html">Магазин</a>
+        </li>
+        <li>
+            Средства для ухода
+        </li>
+    </ul>
+
+    <section>
+        <h2>Фильтр товаров</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox"  name="baxter-of-california"
+                        id="filter-baxter-of-california" checked>
+                        <label for="filter-baxter-of-california">Baxter of California</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  name="mr-natty"
+                        id="filter-mr-natty" >
+                        <label for="filter-mr-natty">Mr Natty</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  name="suavecito"
+                        id="filter-suavecito" checked>
+                        <label for="filter-suavecito">Suavecito</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  name="malin-goetz"
+                        id="filter-malin-goetz" >
+                        <label for="filter-malin-goetz">Malin+Goetz</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  name="murrays"
+                        id="filter-murrays" >
+                        <label for="filter-murrays">Murray's</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  name="american-crew"
+                        id="filter-american-crew" checked>
+                        <label for="filter-american-crew">American Crew</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Группы товаров:</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="product-group"
+                        value="shaving" id="filter-shave">
+                        <label for="filter-shave">Бритвенные принадлежности</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="product-group"
+                        value="hair-care" id="filter-care" checked>
+                        <label for="filter-care">Средства для ухода</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="product-group"
+                        value="accessories" id="filter-accessories">
+                        <label for="filter-accessories">Аксессуары</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>
+        
+    </section> 
+</main>
+   
+
+<footer> 
+    <section>
+        <h2>Как нас найти</h2>
+        <p>
+           Барбершоп «Бородинский»<br>
+           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+           <a href="blank.html">Как нас найти?</a><br>
+           Телефон: <a href="tel:+78127770266">+7 (812) 777-02-66</a>
+        </p>
+    </section>
+    <section>
+        <h2>Давайте дружить!</h2>
+        <ul>
+            <li>
+                <a href="#">Вконтакте</a>
+            </li>
+            <li>
+                <a href="#">Фейсбук</a>
+            </li>
+            <li>
+                <a href="#">Инстаграм</a>
+            </li>
+        </ul>
+    </section>
+    <p>
+        Разработано::
+        <a href="https://vk.com/amadaro">Amadaro</a>
+    </p>
+</footer>
+<section>
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+        <label for="login-login">Логин</label>
+        <input id="login-login" type="email" name="login"
+        placeholder="email@example.com">
+        </p>
+        <p>
+        <label for="login-password">Пароль</label>
+        <input id="login-password" type="password" name="password"
+        placeholder="••••••••">
+        </p>
+        <p>
+        <label>
+            <input type="checkbox" name="remember">
+            Запомните меня
+        </label>
+        <a href="#">Я забыл пароль!</a>
+        </p>
+        <p>
+        <button type="submit">Войти</button>
+        </p>
+    </form>
+    <button type="button">Закрыть</button>
+</section>
+
+ <section>
+     <h2>Как до нас добраться</h2>
+     <!--Здесь будет карта-->
+     <button type="button">Закрыть</button>
+ </section>
+    
+</body>
+</html>
