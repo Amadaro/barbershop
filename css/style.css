@@ -29,7 +29,7 @@
 
 /*  Global  */
 
-body {
+.page-body {
     min-width: 960px;
     margin: 0;
     padding: 0;
@@ -43,6 +43,11 @@ body {
     background-image: url(../img/background.jpg);
     background-position: top center;
     background-repeat: no-repeat;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 a {
@@ -52,6 +57,18 @@ a {
 img {
 max-width: 100%;
 height: auto;
+}
+/*  Grid */
+
+.page {
+    height: 100%;
+}
+
+/* Main header*/
+.main-header{
+    margin-bottom: 70px;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
 }
 
 /* Main navigation */
