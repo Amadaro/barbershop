@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Барбершоп «Бородинский»</title>
+
+    <!-- Подключение стилей -->
+
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Иконка для сайта -->
+
     <link rel="icon" href="img/icons/180.ico">
     <link rel="apple-touch-icon" href="img/icons/pngico.png">
     
 </head>
 <body class="page-body">
+
+<!-- Шапка сайта -->
 
 <header class="main-header">
     <nav class="main-navigation">
@@ -36,6 +44,7 @@
     </nav>
 </header>
 
+<!-- Основной контент -->
 
 <main class="container">
    <h1 class="visually-hidden">Барбершоп «Бородинский»</h1> 
@@ -115,25 +124,27 @@
        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
            <p class="appointment-item">
                <label for="appointment-date">Дата</label>
-               <input id="appointment-date" type="text" name="date" placeholder="01.01.2022">
+               <input id="appointment-date" type="text" name="date" value="" placeholder="01.01.2022">
            </p>
            <p class="appointment-item">
             <label for="appointment-time">Время</label>
-            <input id="appointment-time" type="text" name="time" placeholder="10:00">
+            <input id="appointment-time" type="text" name="time" value=""  placeholder="10:00">
            </p>
            <p class="appointment-item">
             <label for="appointment-name">Ваше имя</label>
-            <input id="appointment-name" type="text" name="name" placeholder="Борода">
+            <input id="appointment-name" type="text" name="name" value=""  placeholder="Борода">
            </p>
            <p class="appointment-item"> 
             <label for="appointment-phone">Телефон</label>
-            <input id="appointment-phone" type="tel" name="phone" placeholder="+7 000  0000-00-00">
+            <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 000  0000-00-00">
            </p>
            <button class="button" type="submit">Отправить</button>
+       </form>
    </section>
-   </div>
-
+ </div>
 </main>
+
+<!-- Подвал -->
 
 <footer class="main-footer"> 
     <div class="container">
@@ -176,39 +187,40 @@
     </p>
 </div>
 </footer>
-<!-- <section class="modal modal-login">
+
+<!-- Модальные окна -->
+<section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p class="modal-desciption">Введите пожалуйста свой логин и пароль</p>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="login-form" action="жесть" method="post">
         <p>
-        <label for="login-login">Логин</label>
-        <input class="login-icon-user" id="login-login" type="email" name="login"
+        <label class="visually-hidden"for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="email" name="login"
         placeholder="email@example.com">
         </p>
         <p>
-        <label for="login-password">Пароль</label>
-        <input class="login-icon-password" id="login-password" type="password" name="password"
+        <label class="visually-hidden"for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password"
         placeholder="••••••••">
         </p>
         <p class="login-help">
         <label class="login-checkbox">
-            <input type="checkbox" name="remember">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
             Запомните меня
         </label>
         <a class="restore" href="#">Я забыл пароль!</a>
         </p>
-        <p>
         <button class="button" type="submit">Войти</button>
-        </p>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
-</section> -->
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
 
- <!-- <section  class="modal  modal-map">
-     <h2>Как до нас добраться</h2>
+ <section  class="modal  modal-map">
+     <h2  class="visually-hidden">Как до нас добраться</h2>
      Здесь будет карта
      <button class="modal-close" type="button">Закрыть</button>
  </section>
-     -->
+    
 </body>
 </html>
