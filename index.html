@@ -37,7 +37,8 @@
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
         <div class="user-navigation">
-        <a  class="login-link" href="blank.html">Вход</a>
+        <a  class="login-link" href="login.html">Вход</a>
+        
         </div>
         </div>
         </div>
@@ -114,7 +115,7 @@
            пн-пт: с 10:00 до 22:00<br>
            сб-вс: c 10:00 до 19:00
        </p>
-       <a class="button" href="blank.html">Как проехать</a>
+       <a class="button contacts-button-map" href="map.html">Как проехать</a>
        <a class="button" href="blank.html">Обратная связь</a>
    </section>
    
@@ -192,16 +193,16 @@
 <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p class="modal-desciption">Введите пожалуйста свой логин и пароль</p>
-    <form class="login-form" action="жесть" method="post">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
         <label class="visually-hidden"for="user-login">Логин</label>
         <input class="login-icon-user" id="user-login" type="email" name="login"
-        placeholder="email@example.com">
+        placeholder="email@example.com" >
         </p>
         <p>
         <label class="visually-hidden"for="user-password">Пароль</label>
         <input class="login-icon-password" id="user-password" type="password" name="password"
-        placeholder="••••••••">
+        placeholder="••••••••" >
         </p>
         <p class="login-help">
         <label class="login-checkbox">
@@ -213,14 +214,17 @@
         </p>
         <button class="button" type="submit">Войти</button>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
-</section>
-
+    <button class="modal-close modal-close-login" type="button" aria-label="Закрыть"></button>
+</section> 
  <section  class="modal  modal-map">
      <h2  class="visually-hidden">Как до нас добраться</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.63799393427!2d30.314121008398445!3d59.93779209838688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96288ff9713423d4!2z0JHQkNCg0JHQldCg0KjQntCfIMKr0JHQntCg0J7QlNCY0J3QodCa0JjQmcK7!5e0!3m2!1sru!2sru!4v1653557521853!5m2!1sru!2sru" width="766" height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-     <button class="modal-close" type="button">Закрыть</button>
+     <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
  </section>
-    
+
+
+ <!-- Скрипты -->
+ <script src="js/popup.js"></script>
+ <script src="js/map.js"></script>
 </body>
 </html>
