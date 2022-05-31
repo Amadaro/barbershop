@@ -384,9 +384,6 @@ img {
 .inner-content h2 + h3 {
     margin-top: 30px;
 }
-.inner-content p {
-    max-resolution: 14px 0;
-}
 
 .inner-content table {
     border-collapse: collapse;
@@ -511,6 +508,7 @@ img {
 
 .pagination-item {
     margin-right: 5px;
+    
 }
 
 .pagination-item:last-child {
@@ -523,12 +521,15 @@ img {
     color: var(--basic-white);
     background-color: var(--basic-black);
     text-decoration:none;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
+    
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
-    background-color: var(--speciacl);
+    box-shadow: 0 0 40px 40px var(--speciacl) inset;
 }
 
 .pagination-item-current a {
@@ -663,7 +664,9 @@ img {
     padding: 0;
     list-style: none;
     min-height: 70px;
+    
 }
+
 
 .user-navigation {
     max-width: 140px;
@@ -676,9 +679,10 @@ img {
 
 .site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
+    
 }
 
-.site-navigation-current::after {
+.site-navigation-current::before {
     content: "";
     position: absolute;
     right: 20px;
@@ -687,6 +691,8 @@ img {
     height: 5px;
     background-color: var(--basic-white);
 }
+
+
 
 .site-navigation li {
     list-style: none;
@@ -700,12 +706,15 @@ img {
     padding: 25px 20px;
 }
 
-
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-    background-color: var(--basic-extra-dark);
+    -webkit-transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+  transition: box-shadow 500ms ease-in-out;
+box-shadow: 0 0 40px 40px var(--basic-extra-dark) inset;
+
+    
 }
 
 .user-navigation .login-link {
@@ -862,12 +871,19 @@ img {
     background-color: var(--basic-black);
     border: none;
     text-decoration: none;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-    background-color: var(--speciacl);
+    box-shadow: 0 0 40px 40px var(--speciacl) inset;
+}
+.button-dev:hover,
+.button-dev:focus,
+.button-dev:active {
+    box-shadow: 0 0 40px 40px var(--basic-white) inset;
 }
 
 .button.disabled,
@@ -1173,10 +1189,10 @@ img {
     justify-self: end;
 }
 
+
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
     color: var(--basic-black);
-    background-color: var(--basic-white)
 }
 
 /* Login link */
@@ -1307,11 +1323,17 @@ img {
 /* Modal map */
 
 .modal-map {
-    top: 120px;
-    left: 20%;
+    top: 50%;
+    left: 50%;
     width: 766px;
     height: 560px;
+    margin-top: -280px;
+	margin-left: -390px;
     border: 7px solid white
+}
+
+.modal-map p {
+    margin: 0;
 }
 
 .modal-map img {
@@ -1320,6 +1342,18 @@ img {
 
 .modal-map iframe {
     border: none;
+}
+
+.overlay-show {
+    display: block;
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0,0,0,0.4);
+	z-index: 0;
 }
 
 
