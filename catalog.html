@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="inner-page" lang="ru">
+<html class="page inner-page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,11 +20,9 @@
                     alt="Логотип барбершопа «Бородинский»">
                 </a>
             <ul  class="site-navigation">
-                <li><a href="blank.html">Информация</a></li>
-                <li><a href="blank.html">Новости</a></li>
+                <li><a href="news.html">Новости</a></li>
                 <li><a href="price.html">Прайс-лист</a></li>
                 <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-                <li><a href="blank.html">Контакты</a></li>
             </ul>
             <div class="user-navigation">
             <a  class="login-link" href="blank.html">Вход</a>
@@ -91,7 +89,7 @@
                     <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
                         value="shaving" id="filter-shave">
-                        <label for="filter-shave">Бритвенные принадлежности</label>
+                        <label for="filter-shave">Инструменты </label>
                     </li>
                     <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
@@ -226,7 +224,7 @@
         </ul>
     </section>
 </main>
-   
+<!-- Подвал -->
 
 <footer class="main-footer"> 
     <div class="container">
@@ -236,7 +234,7 @@
         <p>
            Барбершоп «Бородинский»<br>
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-           <a class="footer-address" href="blank.html">Как нас найти?</a><br>
+           <a class="footer-address" href="map.html">Как нас найти?</a><br>
            Телефон: <a class="footer-phone" href="tel:+78127770266">+7 (812) 777-02-66</a>
         </p>
     </section>
@@ -265,36 +263,52 @@
     </section>
     <p class="footer-copyright">
         Разработано:
-        <a class="button" href="https://vk.com/amadaro">Amadaro</a>
+        <a class="button button-dev" href="https://vk.com/amadaro">Amadaro</a>
     </p>
 </div>
 </footer>
-<!-- <section class="modal modal-login">
+
+<!-- Модальные окна -->
+<section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p class="modal-desciption">Введите пожалуйста свой логин и пароль</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-        <label for="login-login">Логин</label>
-        <input class="login-icon-user" id="login-login" type="email" name="login"
-        placeholder="email@example.com">
+        <label class="visually-hidden"for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="email" name="login"
+        placeholder="email@example.com" >
         </p>
         <p>
-        <label for="login-password">Пароль</label>
-        <input class="login-icon-password" id="login-password" type="password" name="password"
-        placeholder="••••••••">
+        <label class="visually-hidden"for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password"
+        placeholder="••••••••" >
         </p>
         <p class="login-help">
         <label class="login-checkbox">
-            <input type="checkbox" name="remember">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
             Запомните меня
         </label>
         <a class="restore" href="#">Я забыл пароль!</a>
         </p>
-        <p>
         <button class="button" type="submit">Войти</button>
-        </p>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
-</section> -->
+    <button class="modal-close modal-close-login" type="button" aria-label="Закрыть"></button>
+</section> 
+<div class="modal-overlay-login"></div>
+ <section  class="modal  modal-map">
+     <h2  class="visually-hidden">Как до нас добраться</h2>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.63799393427!2d30.314121008398445!3d59.93779209838688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96288ff9713423d4!2z0JHQkNCg0JHQldCg0KjQntCfIMKr0JHQntCg0J7QlNCY0J3QodCa0JjQmcK7!5e0!3m2!1sru!2sru!4v1653557521853!5m2!1sru!2sru" width="766" height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe></p>
+     <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
+ </section>
+ <div class="modal-overlay-map"></div>
+
+
+ <!-- Скрипты -->
+ <script src="js/popup.js"></script>
+ <script src="js/gallery-slide.js"></script>
+ <script src="js/smallintobig.js"></script>
+ <script src="js/map.js"></script>
+ <script src="js/map-footer.js"></script>
 </body>
 </html>

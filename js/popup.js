@@ -4,6 +4,7 @@ const link = document.querySelector(".login-link");
     const login = popup.querySelector("[name=login]");
     const form = popup.querySelector("form");
     const password = popup.querySelector("[name=password]");
+    const overlaylogin = document.querySelector(".modal-overlay-login")
     
     const storage = localStorage.getItem("login");
     let isStoragesupport = true;
@@ -17,6 +18,7 @@ const link = document.querySelector(".login-link");
      link.addEventListener("click", function(evt){
         evt.preventDefault();
         popup.classList.add("modal-show")
+        overlaylogin.classList.add("overlay-show")
         if (storage) {
             login.value = storage;
             password.focus();
@@ -25,9 +27,16 @@ const link = document.querySelector(".login-link");
         }
     });
 
+    overlaylogin.addEventListener('click',function(evt){
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        this.classList.remove("overlay-show");
+    })
+
      closelog.addEventListener("click",  function(evt){
         evt.preventDefault();
         popup.classList.remove("modal-show")
+        overlaylogin.classList.remove("overlay-show")
         popup.classList.remove("modal-error")
     });
 
@@ -52,6 +61,7 @@ const link = document.querySelector(".login-link");
                 
                 popup.classList.remove("modal-error")
                 popup.classList.remove("modal-show")
+                overlaylogin.classList.remove("overlay-show")
             }
         }
     });

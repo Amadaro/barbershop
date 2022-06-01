@@ -1,5 +1,5 @@
 
-var maplink = document.querySelector(".contacts-button-map");
+var maplink = document.querySelector(".footer-address");
 var mappopup = document.querySelector(".modal-map");
 var mapclose = document.querySelector(".modal-close-map");
 var overlayMapModal = document.querySelector(".modal-overlay-map");

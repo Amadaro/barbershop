@@ -1,144 +1,67 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page inner-page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Барбершоп «Бородинский»</title>
-
-    <!-- Подключение стилей -->
-
+    <title>Барбершоп «Бородинский» | Магазин </title>
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Иконка для сайта -->
-
     <link rel="icon" href="img/icons/180.ico">
     <link rel="apple-touch-icon" href="img/icons/pngico.png">
-    
 </head>
-<body class="page-body">
 
 <!-- Шапка сайта -->
 
-<header class="main-header">
-    <nav class="main-navigation">
-        <a class="main-header-logo">
-            <img src="img/svg/index-logo.svg" width="368" height="153"
-            alt="Логотип барбершопа «Бородинский»">
-        </a>
-        <div class="main-navigation-wrapper">
-        <div class="container">
+<body class="page-body">
+
+    <header class="main-header">
+        <nav class="main-navigation container ">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/svg/logo.svg" width="111" height="24"
+                    alt="Логотип барбершопа «Бородинский»">
+                </a>
             <ul  class="site-navigation">
-                
-                <li class="nav-element"><a href="news.html">Новости</a></li>
-                <li class="nav-element"><a href="price.html">Прайс-лист</a></li>
-                <li class="nav-element"><a href="catalog.html">Магазин</a></li>
-                
+                <li class="site-navigation-current"><a href="news.html">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li ><a href="catalog.html">Магазин</a></li>
             </ul>
-        <div class="user-navigation">
-        <a  class="login-link" href="login.html">Вход</a>
-        
-        </div>
-        </div>
-        </div>
-    </nav>
-</header>
+            <div class="user-navigation">
+            <a  class="login-link" href="blank.html">Вход</a>
+            </div>
+        </nav>
+    </header>
 
 <!-- Основной контент -->
 
 <main class="container">
    <h1 class="visually-hidden">Барбершоп «Бородинский»</h1> 
-
-   <section class="features">
-       <h2 class="visually-hidden">Преимущества</h2>
-       <ul class="features-list">
-           <li class="feature-item"><h3>Быстро</h3>
-               <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
-           </li>
-           <li class="feature-item"><h3>Круто</h3>
-            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-           </li>
-            <li class="feature-item"><h3>Дорого</h3>
-            <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-           </li>
-       </ul>
-   </section>
-
-   <div class="index-columns">
-   
-      <section class="news">
-       <h2>Новости</h2>
-       <ul  class="news-list">
-           <li class="news-item">
-               <p> Нам наконец завезли  Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-               <time datetime="2022-01-11">11 января</time>
-           </li>
-           <li  class="news-item">
-               <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-               <time datetime="2022-01-18">18 января</time>
-           </li>
-        </ul>
-        <a class="button" href="news.html">Все новости</a>
-   </section>
-   
-
-   <section class="gallery">
-       <h2>Фотогалерея</h2>
-       <div class="gallery-container">
-         <figure class="gallery-content">
-             <ul class="gallery-slides">
-                <li class="slide slide-show"><a href="#"><img src="img/studio.jpg" width="286" height="164" alt ='Интерьер'></a></li>
-                <li class="slide"><a href="#"><img src="img/studio2.jpg" width="286" height="164" alt ='Коллектив'></a></li>
-                <li class="slide"><a href="#"><img src="img/studio3.jpg" width="286" height="164" alt ='Рабочий процесс'></a></li>
-             </ul>
-         </figure>
-         <button class="button gallery-button gallery-button-back"  >Назад</button>
-         <button class ="button gallery-button gallery-button-next" >Вперед</button>
-       </div>
-    </section> 
-
+   <div class="index-columns columns-news">
+     <section class="news news-newest">
+        <h2>Время перекура...</h2> 
+        <time datetime="2022-01-18">28 января</time>
+        <p>С сегодняшнего дня вы можете курить во время стрижки! Решение было непростым, но большинство из вас будут рады этой новости! Так же в наличии появились сигары и сигариллы от «Cohiba» и «Cuaba»!</p>
+        <img class="news-img news-img-one" src="img/cigars.jpg" >
+     </section>
+     <section class="news news-newest">
+        <h2>Baxter has arrived!</h2> 
+        <time datetime="2022-01-18">23 января</time>
+        <p>Появление инструментов и средств для ухода марки «Baxter of California» в ассортименте нашего  магазина. Товары этой марки не оставят равнодушным никого!</p>
+        <img class="news-img news-img-two" src="img/baxter.jpg" >
+    </section>
    </div>
-
-   <div class="index-columns">
-   <section class="contacts">
-       <h2>Контактная информация</h2>
-       <p>
-           Барбершоп «Бородинский»<br>
-           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-           Телефон: <a class="contacts-phone" href="tel:+78127770266">+7 (812) 777-02-66</a>
-       </p>
-       <p>
-           Время работы:<br>
-           пн-пт: с 10:00 до 22:00<br>
-           сб-вс: c 10:00 до 19:00
-       </p>
-       <a class="button contacts-button-map" href="map.html">Как проехать</a>
-       <a class="button" href="#">Обратная связь</a>
+   <div class="index-columns columns-news">
+   <section class="news news-newest">
+    <h2>Пополнение!</h2> 
+    <time datetime="2022-01-18">18 января</time>
+         <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+         <img class="news-img news-img-three" src="img/barber.jpg" >
    </section>
-   
-   <section class="appointment">
-       <h2>Записаться</h2>
-       <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-           <p class="appointment-item">
-               <label for="appointment-date">Дата</label>
-               <input id="appointment-date" type="text" name="date" value="" placeholder="01.01.2022">
-           </p>
-           <p class="appointment-item">
-            <label for="appointment-time">Время</label>
-            <input id="appointment-time" type="text" name="time" value=""  placeholder="10:00">
-           </p>
-           <p class="appointment-item">
-            <label for="appointment-name">Ваше имя</label>
-            <input id="appointment-name" type="text" name="name" value=""  placeholder="Борода">
-           </p>
-           <p class="appointment-item"> 
-            <label for="appointment-phone">Телефон</label>
-            <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 000  0000-00-00">
-           </p>
-           <button class="button" type="submit">Отправить</button>
-       </form>
+   <section class="news news-newest">
+    <h2>Заходи, охотник!</h2> 
+    <time datetime="2022-01-11">11 января</time>
+        <p> Нам наконец завезли  Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки!</p>
+         <img class="news-img news-img-four" src="img/jagermeister.jpg" >
    </section>
  </div>
 </main>
