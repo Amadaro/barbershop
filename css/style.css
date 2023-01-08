@@ -1531,7 +1531,7 @@ img {
 
 .modal-error {
   animation-name: shake;
-  animation-duration: 0.6 s;
+  animation-duration: 0.6s;
 }
 
 /* Restore */
