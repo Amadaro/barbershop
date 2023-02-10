@@ -1,2 +1,2 @@
 # Barbershop 
-Website Using HTML CSS & JavaScript
+# Website Using HTML CSS & JavaScript
