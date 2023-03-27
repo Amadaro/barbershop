@@ -1,4 +1,4 @@
-Веб-сайт барбершопа - **Barbershop BORODINSKI*
+Веб-сайт барбершопа - **Barbershop BORODINSKI**
 
 **Описание:**
 
