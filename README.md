@@ -11,3 +11,4 @@
 
 - JS
 - HTML
+- CSS
